@@ -15,7 +15,7 @@ should provide an abstraction between two different email service providers.
 If one of the services goes down, your service can quickly failover to
 a different provider without affecting your customers. The service must also store history of delivery successes and failures.
 
-The frontend should allow the user to send an email to a given email address, and search through history for a given email address.
+The frontend should allow the user to send an email to a given email address, and list the history for a given email address.
 
 Example Email Providers:
 
