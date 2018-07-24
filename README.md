@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="https://design.fastwork.co/_nuxt/img/fw-logo-full-mono-600x100.0dfad36.png" width="600">
+</p>
+
+# { "developer": "Software Engineer" } to FastWork
+
+
 Coding Challenge Guidelines
 ===========================
 
@@ -42,9 +49,10 @@ your challenge.
 
 Please pick one of the following technologies:
 
-* Python
-* JavaScript
 * Go
+* NodeJS
+* Python
+* Or some amazing programming language :)
 
 You are also free to use any web framework. If you choose to use a framework
 that results in boilerplate code in the repository, please detail in your
@@ -54,12 +62,18 @@ README which code was written by you (as opposed to generated code).
 
 The front-end should ideally be a single page app with a single `index.html`
 linking to external JS/CSS/etc. You may take this opportunity to demonstrate
-your CSS3 or HTML5 knowledge. Please use React to complete this part.
+your CSS3 or HTML5 knowledge.
+
+Please pick one of the following technologies:
+
+* Vue.js
+* ReactJS
+* Or some amazing programming language :D
 
 Host it!
 --------
 
-When you’re done, host it somewhere (e.g. on Amazon EC2, Heroku, Google AppEngine, etc.).
+When you’re done, host it somewhere (e.g. on Firebase, Amazon EC2, Heroku, Google AppEngine, etc.).
 
 Readme
 ------
@@ -68,7 +82,7 @@ Write your README as if it was for a production service. Include the following i
 
 * Description of the problem and solution.
 * Whether the solution focuses on back-end, front-end or if it's full stack.
-* Reasoning behind your technical choices, including architectural. 
+* Reasoning behind your technical choices, including architectural.
 * Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project.
 
 How we review
@@ -87,10 +101,14 @@ The aspects of your code we will assess include:
 * **Security**: are there any obvious vulnerability?
 * **Testing**: how thorough are the automated tests? Will they be difficult to change if the requirements of the application were to change? Are there some unit and some integration tests?
 	* We're not looking for full coverage (given time constraint) but just trying to get a feel for your testing skills.
-* **UX**: is the web interface understandable and pleasing to use? Is the API intuitive?
 * **Technical choices**: do choices of libraries, databases, architecture etc. seem appropriate for the chosen application?
 
 Bonus point (those items are optional):
 
-* **Scalability**: will technical choices scale well? If not, is there a discussion of those choices in the README? 
+* **UX**: is the web interface understandable and pleasing to use? Is the API intuitive?
+* **Scalability**: will technical choices scale well? If not, is there a discussion of those choices in the README?
 * **Production-readiness**: does the code include monitoring? logging? proper error handling?
+
+## Doubts
+
+Send your questions directly to [nattawut@fastwork.co](mailto:nattawut@fastwork.co).
