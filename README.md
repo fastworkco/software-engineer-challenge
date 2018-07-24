@@ -9,8 +9,8 @@ Coding Challenge Guidelines
 ===========================
 
 Please organize, design, test, document and deploy your code as if it were
-going into production, then send us a link to the hosted repository (e.g.
-Github, Bitbucket...).
+going into production, then send us a link to the hosted public repository (e.g.
+Github, Gitlab, Bitbucket...).
 
 Functional spec
 ---------------
@@ -30,6 +30,7 @@ Example Email Providers:
 * [Mailgun](http://www.mailgun.com) - [Simple Send Documentation](http://documentation.mailgun.com/quickstart.html#sending-messages)
 * [SparkPost](https://www.sparkpost.com/) - [Developer Hub](https://developers.sparkpost.com/)
 * [Amazon SES](http://aws.amazon.com/ses/) - [Simple Send Documentation](http://docs.aws.amazon.com/ses/latest/APIReference/API_SendEmail.html)
+* Etc email provider.
 
 All listed services are free to try and are pretty painless to sign up for, so
 please register your own test accounts on each.
