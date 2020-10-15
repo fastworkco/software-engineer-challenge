@@ -112,4 +112,4 @@ Bonus point (those items are optional):
 
 ## Doubts
 
-Send your questions directly to [nattawut@fastwork.co](mailto:nattawut@fastwork.co).
+Send your questions directly to [engineer-recruiting@fastwork.co](mailto:engineer-recruiting@fastwork.co).
