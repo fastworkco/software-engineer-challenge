@@ -1,115 +1,41 @@
-<p align="center">
-  <img src="https://design.fastwork.co/_nuxt/img/fw-logo-full-mono-600x100.0dfad36.png" width="600">
-</p>
+# Software Engineer Challenge @ Fastwork
 
-# { "developer": "Software Engineer" } to FastWork
+You are going to implement a notification service that will send notifications to users through different channels.
+
+For example, on an e-commerce platform, when a buyer purchases a product, the notification service should send both email and push notifications to the seller.
 
 
-Coding Challenge Guidelines
-===========================
+![](https://hedgedoc.sukino.xyz/uploads/99ff8053-e0a5-4cbb-b7cf-2c89c41a693c.png)
 
-Please organize, design, test, document and deploy your code as if it were
-going into production, then send us a link to the hosted public repository (e.g.
-Github, Gitlab, Bitbucket...).
 
-Functional spec
----------------
+## Target events
+| Event                                 | Noti channels     | Noti target   |
+| --------                              | --------          | --------      |
+| Buyer sends chat message to seller    | Email, Push       | Seller        |
+| Buyer purchases product               | Email, Push       | Seller        |
+| Remind to pay for pending order       | Push              | Buyer         |
+| Purchased items are shipped           | Push              | Buyer         |
 
-### Email Service
 
-Create a service that accepts the necessary information and sends emails. It
-should provide an abstraction between two different email service providers.
-If one of the services goes down, your service can quickly failover to
-a different provider without affecting your customers. The service must also store history of delivery successes and failures.
+## Requirements
+- The service should be able to handle huge traffic spikes, e.g., sale events on double day 11.11.
+- Notification channels should be configurable, e.g., the system should be able to send notifications via email, push, or both.
+- Notification channel providers should be configurable and able to automatically switch over when one is down.
+    - For example, if we have providers A and B for email, the system should automatically switch to B when A is down.
+- Feel free to add any additional features you think might be necessary.
+- The team should be able to monitor and verify if notifications are sent successfully.
+- The final outcome, if not runnable, should at least include unit tests that cover most scenarios.
 
-The frontend should allow the user to send an email to a given email address, and list the history for a given email address.
 
-Example Email Providers:
+## Technologies Stack
+**Programming Language**
+- Go, TypeScript, JavaScript
 
-* [SendGrid](https://sendgrid.com/user/signup) - [Simple Send Documentation](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)
-* [Mailgun](http://www.mailgun.com) - [Simple Send Documentation](http://documentation.mailgun.com/quickstart.html#sending-messages)
-* [SparkPost](https://www.sparkpost.com/) - [Developer Hub](https://developers.sparkpost.com/)
-* [Amazon SES](http://aws.amazon.com/ses/) - [Simple Send Documentation](http://docs.aws.amazon.com/ses/latest/APIReference/API_SendEmail.html)
-* Etc email provider.
+**Framework**
+- Your choice
 
-All listed services are free to try and are pretty painless to sign up for, so
-please register your own test accounts on each.
+**Database**
+- PostgreSQL, MySQL
 
-Technical spec
---------------
-
-The architecture will be split between a back-end and a web front-end, providing a JSON in/out RESTful API.
-
-### Back-end
-
-Good engineering is about
-using the right tool for the right job, and constantly learning about them.
-Therefore, feel free to mention in your `README` how much experience you have
-with the technical stack you choose, we will take note of that when reviewing
-your challenge.
-
-Please pick one of the following technologies:
-
-* Go
-* NodeJS
-* Python
-* Or some amazing programming language :)
-
-You are also free to use any web framework. If you choose to use a framework
-that results in boilerplate code in the repository, please detail in your
-README which code was written by you (as opposed to generated code).
-
-### Front-end
-
-The front-end should ideally be a single page app with a single `index.html`
-linking to external JS/CSS/etc. You may take this opportunity to demonstrate
-your CSS3 or HTML5 knowledge.
-
-Please pick one of the following technologies:
-
-* Vue.js
-* ReactJS
-* Or some amazing programming language :D
-
-Host it!
---------
-
-When you’re done, host it somewhere (e.g. on Firebase, Amazon EC2, Heroku, Google AppEngine, etc.).
-
-Readme
-------
-
-Write your README as if it was for a production service. Include the following items:
-
-* Description of the problem and solution.
-* Whether the solution focuses on back-end, front-end or if it's full stack.
-* Reasoning behind your technical choices, including architectural.
-* Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project.
-
-How we review
--------------
-
-Your application will be reviewed by the CTO and at least one senior engineer. We do take into consideration your experience level.
-
-**We value quality over feature-completeness**. It is fine to leave things aside provided you call them out in your project's README. The goal of this code sample is to help us identify what you consider production-ready code. You should consider this code ready for final review with your colleague, i.e. this would be the last step before deploying to production.
-
-The aspects of your code we will assess include:
-
-* **Architecture**: how clean is the separation between the front-end and the back-end?
-* **Clarity**: does the README clearly and concisely explains the problem and solution? Are technical tradeoffs explained?
-* **Correctness**: does the application do what was asked? If there is anything missing, does the README explain why it is missing?
-* **Code quality**: is the code simple, easy to understand, and maintainable?  Are there any code smells or other red flags? Does object-oriented code follows principles such as the single responsibility principle? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
-* **Security**: are there any obvious vulnerability?
-* **Testing**: how thorough are the automated tests? Will they be difficult to change if the requirements of the application were to change? Are there some unit and some integration tests?
-	* We're not looking for full coverage (given time constraint) but just trying to get a feel for your testing skills.
-* **Technical choices**: do choices of libraries, databases, architecture etc. seem appropriate for the chosen application?
-
-Bonus point (those items are optional):
-
-* **UX**: is the web interface understandable and pleasing to use? Is the API intuitive?
-* **Scalability**: will technical choices scale well? If not, is there a discussion of those choices in the README?
-* **Production-readiness**: does the code include monitoring? logging? proper error handling?
-
-## Doubts
-
-Send your questions directly to [engineer-recruiting@fastwork.co](mailto:engineer-recruiting@fastwork.co).
+## Submission
+- Please submit your work by send link to GitHub repo to `engineer-recruiting@fastwork.co` and `nitchanan@fastwork.co`
